@@ -3,7 +3,7 @@ A SBActiveExpressionSyncEvent wraps an expression and reports its execution to a
 "
 Class {
 	#name : #SBActiveExpressionSyncEvent,
-	#superclass : #SBSubstitution,
+	#superclass : #SBStSubstitution,
 	#category : #'Sandblocks-ActiveExpression'
 }
 
