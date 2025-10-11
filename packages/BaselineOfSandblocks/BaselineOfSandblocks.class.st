@@ -99,8 +99,8 @@ BaselineOfSandblocks >> baseline: spec [
 		
 		spec
 			group: 'default'
-				with: #('Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation' 'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian' 'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm' 'Sandblocks-ActiveExpression' 'Sandblocks-RatPack');
-			group: 'tutorial' with: #('Sandblocks-Tutorial').
+				with: #('Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation' 'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian' 'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm' 'Sandblocks-ActiveExpression' 'Sandblocks-RatPack' 'Sandblocks-Tutorial').
+			
 ]
 
 { #category : #scripts }
