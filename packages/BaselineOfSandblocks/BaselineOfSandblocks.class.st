@@ -48,12 +48,12 @@ BaselineOfSandblocks >> baseline: spec [
 			baseline: 'ActiveExpressions'
 				with: [spec repository: 'github://active-expressions/active-expressions-squeak:master/src'];
 			baseline: 'RatPack'
-				with: [spec repository: 'github://hpi-swa-teaching/RatPack:develop/packages'];
+				with: [spec repository: 'github://hpi-swa-teaching/RatPack2.0:develop/packages'];
 			baseline: 'QoppaS' with: [spec repository: 'github://hpi-swa-lab/QoppaS/packages'];
 			baseline: 'Ohm' with: [spec repository: 'github://hpi-swa/Ohm-S:master/packages'];
 			baseline: 'SimulationStudio' with: [
 				spec
-					repository: 'github://LinqLover/SimulationStudio/packages';
+					repository: 'github://LinqLover/SimulationStudio:squeak60/packages';
 					loads: #('SimulationStudio-Base' 'SimulationStudio-Sandbox')];
 			package: 'SVG-Morphic' with: [spec repository: 'http://www.squeaksource.com/SVGMorph'];
 			package: 'PoppyPrint-Core' with: [spec repository: 'github://tom95/poppy-print/packages'].
@@ -86,8 +86,7 @@ BaselineOfSandblocks >> baseline: spec [
 			package: 'Sandblocks-Representation'
 				with: [spec requires: #('Sandblocks-Core' 'squeak6-simulation')];
 			package: 'Sandblocks-RatPack' with: [spec requires: #('default' 'RatPack')];
-			package: 'Sandblocks-ActiveExpression' with: [spec requires: #('default' 'ActiveExpressions')];
-			package: 'JumpingCubes' with: [spec requires: #('Sandblocks-ActiveExpression')].
+			package: 'Sandblocks-ActiveExpression' with: [spec requires: #('default' 'ActiveExpressions')].
 		
 		spec group: 'squeak6-compat' with: #().
 		spec group: 'squeak6-simulation' with: #().
@@ -101,14 +100,12 @@ BaselineOfSandblocks >> baseline: spec [
 		spec
 			group: 'default'
 				with: #('Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation' 'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian' 'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm');
-			group: 'tutorial' with: #('Sandblocks-Tutorial');
-			group: 'withActiveExpressions' with: #('Sandblocks-ActiveExpression' 'JumpingCubes');
+			group: 'tutorial' with: #('Sandblocks-Tutorial' 'Sandblocks-ActiveExpression');
 			group: 'withRatPack' with: #('Sandblocks-RatPack')]
 ]
 
 { #category : #scripts }
 BaselineOfSandblocks >> postLoadCore [
-	"Add block editor to 'what to show' menu"
 
 	CodeHolder addSandblocksDefault: false
 ]
