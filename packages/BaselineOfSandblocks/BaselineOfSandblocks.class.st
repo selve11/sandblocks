@@ -54,13 +54,10 @@ BaselineOfSandblocks >> baseline: spec [
 				spec
 					repository: 'github://LinqLover/SimulationStudio:squeak60/packages';
 					loads: #('SimulationStudio-Base' 'SimulationStudio-Sandbox') ];
-			package: 'SVG-Morphic'     with: [ spec repository: 'http://www.squeaksource.com/SVGMorph' ];
+			package: 'SVG-Morphic' with: [ spec repository: 'http://www.squeaksource.com/SVGMorph' ];
 			package: 'PoppyPrint-Core' with: [ spec repository: 'github://tom95/poppy-print/packages' ].
 
 		spec
-			package: 'Sandblocks-Utils';
-			package: 'Sandblocks-Layout';
-			package: 'Sandblocks-Morphs';
 			package: 'Sandblocks-Core' with: [
 				spec
 					requires: #('SVG-Morphic' 'Sandblocks-Morphs' 'Sandblocks-Utils' 'Sandblocks-Layout' 'squeak6-compat');
@@ -68,9 +65,12 @@ BaselineOfSandblocks >> baseline: spec [
 			package: 'Sandblocks-Smalltalk'
 				with: [ spec requires: #('Sandblocks-Core' 'PoppyPrint-Core' 'squeak6-simulation') ];
 			package: 'Sandblocks-Explorer' with: [ spec requires: #('Sandblocks-Core') ];
-			package: 'Sandblocks-Watch'    with: [ spec requires: 'Sandblocks-Core' ];
+			package: 'Sandblocks-Watch' with: [ spec requires: 'Sandblocks-Core' ];
 			package: 'Sandblocks-Debugger' with: [ spec requires: 'Sandblocks-Core' ];
 			package: 'Sandblocks-Plugin-StLivePreview' with: [ spec requires: #('Sandblocks-Smalltalk') ];
+			package: 'Sandblocks-Utils';
+			package: 'Sandblocks-Layout';
+			package: 'Sandblocks-Morphs';
 			package: 'Sandblocks-Drawing' with: [ spec requires: 'Sandblocks-Core' ];
 			package: 'Sandblocks-Ohm'
 				with: [ spec requires: #('Sandblocks-Core' 'Ohm' 'Sandblocks-Smalltalk') ];
@@ -81,20 +81,14 @@ BaselineOfSandblocks >> baseline: spec [
 			package: 'Sandblocks-Compiler' with: [ spec requires: 'Sandblocks-Core' ];
 			package: 'Sandblocks-Babylonian'
 				with: [ spec requires: #('Sandblocks-Core' 'Sandblocks-Smalltalk') ];
-
-			package: 'Sandblocks-ActiveExpression'
-				with: [ spec requires: #('Sandblocks-Core' 'ActiveExpressions') ];
-			package: 'Sandblocks-RatPack'
-				with: [ spec requires: #('Sandblocks-Core' 'RatPack' 'Sandblocks-Smalltalk') ];
+			package: 'Sandblocks-Tutorial' with: [ spec requires: 'default' ];
 			package: 'Sandblocks-Representation'
 				with: [ spec requires: #('Sandblocks-Core' 'squeak6-simulation') ];
-			package: 'Sandblocks-Tutorial'
-				with: [ spec requires: #(
-					'Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Explorer'
-					'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Representation'
-					'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian'
-					'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm'
-					'Sandblocks-ActiveExpression' 'Sandblocks-RatPack') ].
+
+			package: 'Sandblocks-RatPack'
+				with: [ spec requires: #('default' 'RatPack' 'Sandblocks-Smalltalk') ];
+			package: 'Sandblocks-ActiveExpression'
+				with: [ spec requires: #('default' 'ActiveExpressions') ].
 
 		spec group: 'squeak6-compat' with: #().
 		spec group: 'squeak6-simulation' with: #().
@@ -107,13 +101,10 @@ BaselineOfSandblocks >> baseline: spec [
 
 		spec
 			group: 'default'
-				with: #(
-					'Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs'
-					'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation'
-					'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian'
-					'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm'
-					'Sandblocks-ActiveExpression' 'Sandblocks-RatPack' 'Sandblocks-Tutorial');
-
+				with: #('Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs'
+						'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation'
+						'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian'
+						'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm');
 			group: 'tutorial'             with: #('Sandblocks-Tutorial');
 			group: 'withActiveExpressions' with: #('Sandblocks-ActiveExpression');
 			group: 'withRatPack'          with: #('Sandblocks-RatPack') ].
