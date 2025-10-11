@@ -94,8 +94,7 @@ BaselineOfSandblocks >> baseline: spec [
 					'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Representation'
 					'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian'
 					'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm'
-					'Sandblocks-ActiveExpression' 'Sandblocks-RatPack') ];
-			package: 'JumpingCubes' with: [ spec requires: #('Sandblocks-ActiveExpression') ].
+					'Sandblocks-ActiveExpression' 'Sandblocks-RatPack') ].
 
 		spec group: 'squeak6-compat' with: #().
 		spec group: 'squeak6-simulation' with: #().
@@ -113,10 +112,10 @@ BaselineOfSandblocks >> baseline: spec [
 					'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation'
 					'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian'
 					'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm'
-					'Sandblocks-ActiveExpression' 'JumpingCubes' 'Sandblocks-RatPack' 'Sandblocks-Tutorial');
+					'Sandblocks-ActiveExpression' 'Sandblocks-RatPack' 'Sandblocks-Tutorial');
 
 			group: 'tutorial'             with: #('Sandblocks-Tutorial');
-			group: 'withActiveExpressions' with: #('Sandblocks-ActiveExpression' 'JumpingCubes');
+			group: 'withActiveExpressions' with: #('Sandblocks-ActiveExpression');
 			group: 'withRatPack'          with: #('Sandblocks-RatPack') ].
 ]
 
