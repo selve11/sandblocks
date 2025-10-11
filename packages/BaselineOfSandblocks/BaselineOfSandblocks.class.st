@@ -47,7 +47,7 @@ BaselineOfSandblocks >> baseline: spec [
 			baseline: 'ActiveExpressions'
 				with: [ spec repository: 'github://active-expressions/active-expressions-squeak:master/src' ];
 			baseline: 'RatPack'
-				with: [ spec repository: 'github://hpi-swa-teaching/RatPack:develop/packages' ];
+				with: [ spec repository: 'github://hpi-swa-teaching/RatPack2.0:develop/packages' ];
 			baseline: 'QoppaS' with: [ spec repository: 'github://hpi-swa-lab/QoppaS/packages' ];
 			baseline: 'Ohm' with: [ spec repository: 'github://hpi-swa/Ohm-S:master/packages' ];
 			baseline: 'SimulationStudio' with: [
