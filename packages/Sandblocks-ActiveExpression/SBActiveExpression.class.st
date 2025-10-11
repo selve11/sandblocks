@@ -3,7 +3,7 @@ A SBActiveExpression is a simple projection for active expressions. It displays 
 "
 Class {
 	#name : #SBActiveExpression,
-	#superclass : #SBSubstitution,
+	#superclass : #SBStSubstitution,
 	#category : #'Sandblocks-ActiveExpression'
 }
 
