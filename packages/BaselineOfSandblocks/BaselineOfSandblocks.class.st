@@ -48,7 +48,7 @@ BaselineOfSandblocks >> baseline: spec [
 			baseline: 'ActiveExpressions'
 				with: [spec repository: 'github://active-expressions/active-expressions-squeak:master/src'];
 			baseline: 'RatPack'
-				with: [spec repository: 'github://hpi-swa-teaching/RatPack:develop/packages'];
+				with: [spec repository: 'github://hpi-swa-teaching/RatPack2.0:develop/packages'];
 			baseline: 'QoppaS' with: [spec repository: 'github://hpi-swa-lab/QoppaS/packages'];
 			baseline: 'Ohm' with: [spec repository: 'github://hpi-swa/Ohm-S:master/packages'];
 			baseline: 'SimulationStudio' with: [
@@ -99,10 +99,8 @@ BaselineOfSandblocks >> baseline: spec [
 		
 		spec
 			group: 'default'
-				with: #('Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation' 'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian' 'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm');
-			group: 'tutorial' with: #('Sandblocks-Tutorial');
-			group: 'withActiveExpressions' with: #('Sandblocks-ActiveExpression');
-			group: 'withRatPack' with: #('Sandblocks-RatPack')]
+				with: #('Sandblocks-Core' 'Sandblocks-Smalltalk' 'Sandblocks-Debugger' 'Sandblocks-Morphs' 'Sandblocks-Explorer' 'Sandblocks-Watch' 'Sandblocks-Drawing' 'Sandblocks-Representation' 'Sandblocks-Compiler' 'Sandblocks-Plugin-StLivePreview' 'Sandblocks-Babylonian' 'Sandblocks-CustomJavascript' 'Sandblocks-Scheme' 'Sandblocks-Ohm' 'Sandblocks-ActiveExpression' 'Sandblocks-RatPack');
+			group: 'tutorial' with: #('Sandblocks-Tutorial').
 ]
 
 { #category : #scripts }
