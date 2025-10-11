@@ -85,7 +85,7 @@ BaselineOfSandblocks >> baseline: spec [
 			package: 'Sandblocks-ActiveExpression'
 				with: [ spec requires: #('Sandblocks-Core' 'ActiveExpressions') ];
 			package: 'Sandblocks-RatPack'
-				with: [ spec requires: #('Sandblocks-Core' 'RatPack') ];
+				with: [ spec requires: #('Sandblocks-Core' 'RatPack' 'Sandblocks-Smalltalk') ];
 			package: 'Sandblocks-Representation'
 				with: [ spec requires: #('Sandblocks-Core' 'squeak6-simulation') ];
 			package: 'Sandblocks-Tutorial'
